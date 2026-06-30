@@ -7,9 +7,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 
+import org.springframework.stereotype.Component;
+
 import ru.netology.model.Post;
 import ru.netology.service.PostService;
 
+@Component
 public class PostController {
 
     public static final String APPLICATION_JSON = "application/json";

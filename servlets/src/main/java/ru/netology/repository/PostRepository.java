@@ -6,8 +6,11 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.stereotype.Repository;
+
 import ru.netology.model.Post;
 
+@Repository
 public class PostRepository {
 
     private final ConcurrentHashMap<Long, Post> storage = new ConcurrentHashMap<>();
